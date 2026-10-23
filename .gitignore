@@ -1,0 +1,11 @@
+# runtime data: the character's home, memory, letters and diary
+data/
+# local deployment notes, logs and secrets
+.local/
+.env
+*.log
+# dependencies
+node_modules/
+# editor
+.DS_Store
+Thumbs.db
