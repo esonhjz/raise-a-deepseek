@@ -14,5 +14,5 @@
     "check": "node scripts/check.mjs",
     "recall": "node scripts/recall.mjs"
   },
-  "license": "UNLICENSED"
+  "license": "MIT"
 }
