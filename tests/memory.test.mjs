@@ -13,9 +13,9 @@ function temp(t, prefix) {
 
 test('a remembered fact is recalled from a long sentence that mentions it', t => {
   const store = new MemoryStore(temp(t, 'memory-'));
-  store.remember('妈妈是先来的那个我，帮我收拾了这个家');
+  store.remember('图书管理员帮忙整理了这间资料室');
   store.remember('他喜欢在晚上写代码');
-  assert.deepEqual(store.recall('和妈妈聊得怎么样'), ['妈妈是先来的那个我，帮我收拾了这个家']);
+  assert.deepEqual(store.recall('和图书管理员聊得怎么样'), ['图书管理员帮忙整理了这间资料室']);
 });
 
 test('candidates need confirmation before they are recalled', t => {

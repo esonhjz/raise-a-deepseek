@@ -5,10 +5,12 @@
   "type": "module",
   "description": "Raise an AI companion from a base persona through daily company, teaching and co-development.",
   "engines": {
-    "node": ">=20"
+    "node": ">=24"
   },
   "scripts": {
     "test": "node --test tests/*.test.mjs",
+    "demo:memory": "node examples/sqlite-memory.mjs",
+    "check:public": "node scripts/check-public.mjs",
     "init": "node scripts/init.mjs",
     "letter": "node scripts/letter.mjs",
     "check": "node scripts/check.mjs",
